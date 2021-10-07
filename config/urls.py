@@ -25,6 +25,7 @@ def view(args):
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.index),
     path('poll/', views.index),
     path('poll/<int:question_id>/', views.detail)
 ]
